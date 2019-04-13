@@ -1,0 +1,9 @@
+com\padmini\book\database\UserDao.class
+com\padmini\book\model\UserInfo.class
+com\padmini\book\resource\UserResource.class
+com\padmini\book\resource\TestResource.class
+com\padmini\book\database\SessionUtil.class
+com\padmini\book\resource\BookResource.class
+com\padmini\book\model\BookInfo.class
+com\padmini\book\database\BookDao.class
+com\padmini\book\resource\StatusResource.class
