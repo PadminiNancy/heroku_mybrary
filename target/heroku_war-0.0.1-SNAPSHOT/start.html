@@ -419,12 +419,16 @@ function login()
        var xhr = new XMLHttpRequest();
        xhr.addEventListener("readystatechange", function () {
       var  f=1;
+      var nf=1;
       var r;
       var input="";
          if (this.readyState === 4 && this.status == 200) {
             r = this.responseText;
             f = r.localeCompare("t");
-            if(f == 0){
+            nf = r.localeCompare("nf");
+            if(nf==0)
+            	document.getElementById("linfo").innerHTML = "User does'nt exist";
+            else if(f == 0){
             	createCookie("uname",name,1);
                localStorage.setItem( 'local', name );
                window.location.href = "https://frozen-mountain-44107.herokuapp.com/content.html";

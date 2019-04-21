@@ -35,7 +35,9 @@ public class UserResource {
 	public String login(@QueryParam("name") String name, @QueryParam("pass") String password)
 	{
 		UserInfo uf = ud.getUser(name);
-		if(uf.getUname().equals(name) && uf.getPassword().equals(password))
+		if(uf.getUname().equals("nf"))
+			return "nf";
+		else if(uf.getUname().equals(name) && uf.getPassword().equals(password))
 		  return "t";
 		//	return uf;
 		else
